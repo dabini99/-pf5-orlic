@@ -133,11 +133,12 @@ section#more div.process:before{
 }
 section#more div.process div.sub {  
   position: absolute;
-  bottom: 0;
+  bottom: 110px;
   color: white;
+  left: 100px;
 }
-section#more div.process div.sub h2 {
-  
+section#more div.process div.sub h2 {  
+  line-height: 2;
 }
 section#more div.process div.sub p {
   
@@ -146,7 +147,7 @@ section#more div.process a {
   position: absolute;
   bottom: 230px;
   right: 0;
-  color: white;
+  color: #145240;
 }
 section#more div.ing {  
   width: 50%;
@@ -162,11 +163,12 @@ section#more div.ing:before{
 }
 section#more div.ing div.sub {  
   position: absolute;
-  bottom: 0;
+  bottom: 110px;
   color: white;
+  left: 100px;
 }
-section#more div.ing div.sub h3 {
-  
+section#more div.ing div.sub h3 {  
+  line-height: 2;
 }
 section#more div.ing div.sub p {
   
@@ -175,5 +177,5 @@ section#more div.ing a {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: white;
+  color: #145240;
 }
