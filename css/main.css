@@ -1,0 +1,179 @@
+main {
+  
+}
+section#brand {  
+  min-height: 1000px;
+  background-color: #f5f7f6;
+}
+section#brand div.flex {  
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+section#brand div.flex div.text {  
+  /*! text-align: center; */
+  padding: 100px;
+}
+section#brand div.flex div.text p.title {  
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 90px;
+}
+section#brand div.flex div.text p.title::before{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+}
+section#brand div.flex div.text h2 {  
+  font-weight: 700;
+  margin-bottom: 50px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+section#brand div.flex div.text h2 sapn{
+  
+}
+section#brand div.flex div.text p.sub {  
+  line-height: 1.6;
+  margin-bottom: 100px;
+  font-weight: 600;
+}
+section#brand div.flex div.text a {
+  
+}
+section#brand div.flex div.photo {  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section#brand div.flex div.photo::after{
+  content: "";
+  background-image: url(../img/mBrand.jpg);
+  width: 900px;
+  height: 900px;
+  display: block;
+}
+section#brand div.flex div.photo p {  
+
+}
+section#products {  
+  min-height: 900px;
+}
+section#products div.wrap {  
+  gap: 30px;
+  justify-content: center;
+}
+section#products div.wrap .wrapin{
+  
+  /*! display: grid; */
+  /*! grid-template-columns: 600px 600px 600px 600px 600px 600px; */
+  /*! overflow: hidden; */
+  /*! position:relative; */
+}
+section#products div.wrap .wrapin span{
+  position: absolute;
+}
+section#products div.wrap aslide {
+  
+}
+section#products div.wrap div.product {
+  
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+section#products div.wrap div.product a { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+section#products div.wrap div.product a figure{
+  
+  height: 100%;
+  background-color: #ccc;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  /*! box-sizing: border-box; */
+}
+section#products div.wrap div.product a img {  
+  width: 180px;
+}
+section#products div.wrap div.product:nth-of-type(3) a img{
+  width: 300px;
+}
+section#products div.wrap div.product a p.name {
+  
+}
+section#products div.wrap div.product a p.price {
+  
+}
+section#more {  
+  min-height: 900px;
+  box-sizing: border-box;
+}
+section#more div.process {  
+  width: 50%;
+  position: relative;
+  box-sizing: border-box;
+}
+section#more div.process:before{
+  content: "";
+  background-image: url(../img/mProcess_bg.jpg);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+section#more div.process div.sub {  
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+section#more div.process div.sub h2 {
+  
+}
+section#more div.process div.sub p {
+  
+}
+section#more div.process a {  
+  position: absolute;
+  bottom: 230px;
+  right: 0;
+  color: white;
+}
+section#more div.ing {  
+  width: 50%;
+  position: relative;
+}
+section#more div.ing:before{
+  content: "";
+  background-image: url(../img/mIngredient_bg.jpg);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+section#more div.ing div.sub {  
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+section#more div.ing div.sub h3 {
+  
+}
+section#more div.ing div.sub p {
+  
+}
+section#more div.ing a {  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
