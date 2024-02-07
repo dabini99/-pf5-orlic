@@ -91,8 +91,7 @@ section#products div.wrap div.product a {
   gap: 20px;
   height: 100%;
 }
-section#products div.wrap div.product a figure{
-  
+section#products div.wrap div.product a figure{  
   height: 100%;
   background-color: #ccc;
   width: 90%;
@@ -101,6 +100,7 @@ section#products div.wrap div.product a figure{
   align-items: center;
   padding: 20px 0;
   /*! box-sizing: border-box; */
+  height: 613px;
 }
 section#products div.wrap div.product a img {  
   width: 180px;

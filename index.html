@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="css/footer.css">
     <!-- 제이쿼리 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("header div.flex ul.id li:nth-of-type(2)").click(function(){
+                $("header .smenu").slideToggle();
+                return false;
+            });
+        });
+    </script>
     <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
     <!-- slik -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -60,10 +68,48 @@
             </ul>
             <ul class="id flex">
                 <li><a href="">KOR</a></li>
-                <li><a href="">로그인</a></li>
-                <li><a href="">회원가입</a></li>
+                <div class="join">
+                    <a href="">로그인</a>
+                    <a href="">회원가입</a>
+                </div>
                 <li><a href="">메뉴</a></li>
             </ul>
+        </div>
+        <div class="smenu hide">
+            <div class="slideMain">
+                <ul>
+                    <div class="side">
+                        <li class="h5"><a href="">BRAND</a></li>
+                        <p><a href="">BRAND</a></p>
+                        <p><a href="">MIND CLEAN BEAUTY</a></p>
+                        <p><a href="">핵심원료</a></p>
+                    </div>
+                    <div class="side">
+                        <li class="h5"><a href="">B2B</a></li>
+                        <p><a href="">ODM/OEM</a></p>
+                        <p><a href="">대량주문</a></p>
+                    </div>
+                    <div class="side">
+                        <li class="h5"><a href="">PRODUCT</a></li>
+                    </div>
+                    <div class="side">
+                        <li class="h5"><a href="">NOTICE</a></li>
+                        <p><a href="">고객문의</a></p>
+                        <p><a href="">제품리뷰</a></p>
+                        <p><a href="">공지사항</a></p>
+                        <p><a href="">자주하는질문</a></p>
+                    </div>
+                    <div class="side">
+                        <li class="h5"><a href="">SNS</a></li>
+                    </div>
+                </ul>
+                <div class="other">
+                    <p class="call h6">고객센터 1599-2275</p>
+                    <p class="oo">평일10:00~18:00(점심12:00~13:00) <span class="oo block">토/일/공휴일 휴무</span> </p>
+                    <a href="" class="bo">대량주문</a>
+                    <a href="" class="bo">주문조회</a>
+                </div>
+            </div>
         </div>
     </header>
     <!-- 타이틀영역 -->

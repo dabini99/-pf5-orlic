@@ -13,11 +13,13 @@ header div.flex h2 {
   background-image: url(../img/logo_color.png);
   width: 110px;
   height: 22px;
+  width: 335px;
+  background-repeat: no-repeat;
 }
 header div.flex ul.gnb {
   
   /*! width: calc((100% - 110px) / 2); */
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 header div.flex ul.gnb li {
   
@@ -28,10 +30,118 @@ header div.flex ul.gnb li a {
 header div.flex ul.id {  
   /*! width: calc((100% - 110px) / 3); */
   justify-content: space-around;
+  align-items: center;
 }
 header div.flex ul.id li {
   
+  display: flex;
+  align-items: center;
 }
-header div.flex ul.id li a {
+header div.flex ul.id li a {  
   
+}
+header div.flex ul.id li:nth-of-type(1) a{  
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+header div.flex ul.id li:nth-of-type(1) a::before{
+  content: "";
+  background-image: url(../img/language_on.png);
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+header div.flex ul.id li:nth-of-type(2) a {  
+  font-size: 0;
+  width: 50px;
+  height: 18px;
+  display: block;
+  position: relative;
+}
+header div.flex ul.id li:nth-of-type(2) a::before{
+  content: "";    
+  border-bottom: 3px solid black;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+}
+header div.flex ul.id li:nth-of-type(2) a::after{
+  content: "";
+  border-bottom: 3px solid black;
+  width: 50%;
+  display: block;
+  position: absolute;
+  bottom: 13px;
+  right: 0;
+}
+header div.flex ul.id div.join{
+
+}
+header div.flex ul.id div.join a{  
+  
+}
+header div.flex ul.id div.join a:not(:last-child){
+  border-right: 1px solid;
+  padding-right: 5px;
+}
+header .smenu{
+  width: 100%;
+  height: 100vh;
+  background-color: #0f2318;
+  box-sizing: border-box;
+}
+header .smenu .slideMain{  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+}
+header .smenu ul{
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  padding-bottom: 5%;
+}
+header .smenu ul div.side{
+  
+}
+header .smenu ul div.side li{  
+  margin-bottom: 15px;
+}
+header .smenu ul div.side li a{  
+  color: white;
+}
+header .smenu ul div.side p{
+  
+  line-height: 2;
+}
+header .smenu ul div.side p a{  
+  color: white;
+}
+header .smenu .slideMain .other{
+  display: grid;
+  width: 1080px;
+  grid-template-columns: auto 1fr auto auto;
+  position: relative;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+header .smenu .slideMain .other::before{
+  content: "";
+  border-top: 1px solid white;
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+header .smenu .slideMain .other p.call{
+  color: white;
+}
+header .smenu .slideMain .other p.oo{  
+  color: white;
+}
+header .smenu .slideMain .other a.bo{  
+  color: white;
 }

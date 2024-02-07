@@ -73,6 +73,9 @@ body{
 .align-center{
    align-items: center;
 }
+.block{
+   display: block;
+}
 /* 가상선택자 */
 main .h2::before{
   /*! content: ""; */
