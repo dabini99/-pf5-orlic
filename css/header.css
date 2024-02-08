@@ -1,5 +1,6 @@
 header {
   
+  position: relative;
 }
 header div.flex {  
   height: 90px;
@@ -91,6 +92,16 @@ header .smenu{
   height: 100vh;
   background-color: #0f2318;
   box-sizing: border-box;
+  position: absolute;
+  top: 0;
+}
+header .smenu a.close{  
+  background-image: url(../img/btn_close.png);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 header .smenu .slideMain{  
   display: flex;
@@ -124,10 +135,11 @@ header .smenu ul div.side p a{
 header .smenu .slideMain .other{
   display: grid;
   width: 1080px;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: 204px auto auto auto;
   position: relative;
   padding-top: 50px;
   box-sizing: border-box;
+  /*! column-gap: 20px; */
 }
 header .smenu .slideMain .other::before{
   content: "";
@@ -144,4 +156,38 @@ header .smenu .slideMain .other p.oo{
 }
 header .smenu .slideMain .other a.bo{  
   color: white;
+  position: relative;
+}
+header .smenu .slideMain .other a.bo:nth-of-type(2){
+  
+}
+header .smenu .slideMain .other a.bo:nth-of-type(2)::after{
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/serach.png);
+  width: 15px;
+  height: 15px;
+  right: 44px;
+  top: 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .smenu .slideMain .other a.bo::before{
+  content: "";
+  border-bottom: 1px solid;
+  display: block;
+  width: 190px;
+  height: 20px;
+  position: absolute;
+}
+header .smenu .slideMain .other a.bo::after{
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/right.svg);
+  width: 24px;
+  height: 24px;
+  right: 34px;
+  top: -3px;
 }

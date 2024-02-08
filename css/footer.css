@@ -4,7 +4,7 @@ footer{
 }
 footer div.wrap{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 295px auto auto;
   grid-template-rows: 1fr auto auto auto;
   max-width: 1520px;
   margin: 0 auto;
@@ -13,6 +13,7 @@ footer div.wrap{
 footer div.wrap div.number{
   grid-column: 1;
   grid-row: 1;
+  align-self: center;
 }
 footer div.wrap div.number p{
 
@@ -22,10 +23,44 @@ footer div.wrap div.order{
   grid-column: 2;
   grid-row: 1;
   align-items: center;
-  justify-content: center;
+  justify-self: flex-start;
+  /*! justify-content:  space-evenly; */
+  gap: 75px;
 }
 footer div.wrap div.order a{
   color: white;
+  padding-right: 30px;
+  position: relative;
+}
+footer div.wrap div.order a:nth-of-type(2){
+  
+}
+footer div.wrap div.order a:nth-of-type(2)::after{
+  background-image: url(../img/serach.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  top: 0px;
+  right: -50px;
+}
+footer div.wrap div.order a::before{
+  content: "";
+  display: block;
+  border-bottom: 1px solid white;
+  position: absolute;
+  width: 139px;
+  height: 17px;
+}
+footer div.wrap div.order a::after{
+  content: "";
+  display: block;
+  background-image: url(../img/right.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -4px;
+  right: -59px;
 }
 footer div.wrap a.menu{
   grid-column: 3;

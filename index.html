@@ -21,14 +21,21 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/response.css">
     <!-- 제이쿼리 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $("header div.flex ul.id li:nth-of-type(2)").click(function(){
-                $("header .smenu").slideToggle();
+                $("header .smenu").show();
                 return false;
             });
+            //X표시 클릭하면 화면 숨기기
+            $("header .smenu a.close").click(function(){
+                $(this).hide();
+            });
+            //X표시용으로 쓸 테그 달기
+            $("header .smenu").prepend('<a href="" class="close block"></a>');
         });
     </script>
     <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
