@@ -37,9 +37,14 @@
             //X표시용으로 쓸 테그 달기
             $("header .smenu").prepend('<a href="" class="close block"></a>');
 
+            $("header .subMenu2").wrapAll('<div class="sub2 hide"></div>');
             // 메인메뉴 아래 서브메뉴
             $("header div.flex ul.gnb li a").hover(function(){
-                $("header .subMenu2").addClass("show");
+                $("header .sub2").addClass("show");
+            });
+            // 마우스떼면 사라지기
+            $("header .subMenu2").mouseleave(function(){
+                $("header .sub2").removeClass("show");
             });
         });
     </script>
@@ -136,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="subMenu2 hide">
+        <div class="subMenu2">
             <div class="in">
                 <ul>
                     <li><a href="">BRAND</a></li>
