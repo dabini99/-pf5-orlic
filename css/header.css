@@ -191,3 +191,40 @@ header .smenu .slideMain .other a.bo::after{
   right: 34px;
   top: -3px;
 }
+header .subMenu2{
+  display: grid;
+  grid-template-columns: 384.5px 1172px 344.5px;
+}
+header .subMenu2 .in{
+  grid-column: 2;
+  /*! display: flex; */
+  /*! justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+header .subMenu2 .in ul{  
+  justify-self: center;
+  text-align: center;
+}
+header .subMenu2 .in ul:nth-of-type(1){  
+  justify-self: end;
+}
+header .subMenu2 .in ul:nth-of-type(2){  
+  transform: translateX(27px);
+}
+header .subMenu2 .in ul:nth-of-type(3){  
+  grid-column: 4;
+  transform: translateX(-12px);
+}
+header .subMenu2 .in ul li{  
+  line-height: 1.6;
+}
+header .subMenu2 .in ul:nth-of-type(1) li{
+  
+}
+header .subMenu2 .in ul:nth-of-type(1) li span{
+  display: block;
+}
+header .subMenu2 .in ul li a{
+  
+}

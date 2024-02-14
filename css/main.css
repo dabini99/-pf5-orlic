@@ -66,8 +66,7 @@ section#products div.wrap {
   gap: 30px;
   justify-content: center;
 }
-section#products div.wrap .wrapin{
-  
+section#products div.wrap .wrapin{  
   /*! display: grid; */
   /*! grid-template-columns: 600px 600px 600px 600px 600px 600px; */
   /*! overflow: hidden; */
@@ -113,6 +112,9 @@ section#products div.wrap div.product a p.name {
 }
 section#products div.wrap div.product a p.price {
   
+}
+.slick-dots{  
+  top: -38px;
 }
 section#more {  
   min-height: 900px;

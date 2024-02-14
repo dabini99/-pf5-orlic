@@ -1,7 +1,18 @@
 @media screen and (max-width:768px){
+  .vh100{
+    height: inherit;
+  }
+  body{    
+  padding: 0 10px;
+  }
 /*  header  */
   header div.flex{    
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 50% 50%;
+  }
+  header div.flex h2{   
+  width: 77px;
+  background-size: contain;
+  height: 16px;
   }
   header div.flex ul.gnb{    
   display: none;
@@ -9,12 +20,86 @@
   header div.flex ul.id li:nth-of-type(1){
     display: none;
   }
-  header div.flex ul.id{
-    
+  header div.flex ul.id{    
   grid-column: 2;
   }
+  header div.flex ul.id div.join{    
+  font-size: 80%;
+  }
+  header div.flex ul.id li:nth-of-type(2) a{    
+  width: 35px;
+  }
+  header div.flex ul.id li:nth-of-type(2) a::after{    
+  border-bottom: 2px solid black;
+  bottom: 12px;
+  }
+  header div.flex ul.id li:nth-of-type(2) a::before{    
+  border-bottom: 2px solid black;
+  }
 /* brand */
+  section#brand{
+  box-sizing: border-box;
+  }
   section#brand div.flex{    
-  flex-direction: column;
+  /*! flex-direction: column; */
+  display: grid;
+  grid-template-rows: 50% 50%;
+  /*! width: 100vw; */
+  /*! height: 100vh; */
+  }
+  section#brand div.flex div.text{   
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  }
+  section#brand div.flex div.text p.title{
+    
+  }
+  section#brand div.flex div.text h2{    
+  font-size: 200%;
+  }
+  section#brand div.flex div.text p.sub{    
+  white-space: pre-wrap;
+  }
+  section#brand div.flex div.photo{    
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  }
+  section#brand div.flex div.photo::after{    
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+/*  products  */
+  section#products div.wrap div.product:nth-of-type(3) a img{    
+  height: 100%;
+  width: 100%;
+  }
+/*  more  */
+  section#more{    
+  display: grid;
+  grid-template-rows: 225px 225px;
+  }
+  section#more div.process{    
+  width: 100%;
+  grid-row: 1;
+  height: 100%;
+  }
+  section#more div.process::before{
+    
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  section#more div.ing{    
+  width: 100%;
+  grid-row: 2;
+  height: 100%;
+  }
+  section#more div.ing::before{
+    
+  background-size: cover;
+  background-repeat: no-repeat;
   }
 }

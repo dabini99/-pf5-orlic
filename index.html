@@ -36,6 +36,11 @@
             });
             //X표시용으로 쓸 테그 달기
             $("header .smenu").prepend('<a href="" class="close block"></a>');
+
+            // 메인메뉴 아래 서브메뉴
+            $("header div.flex ul.gnb li a").hover(function(){
+                $("header .subMenu2").addClass("show");
+            });
         });
     </script>
     <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
@@ -54,8 +59,21 @@
                     arrows: true,
                     autoplay: true,
                     autoplaySpeed: 2000,
-                    speed: 500
-                    
+                    speed: 500,
+                    responsive:[
+                    {
+                    breakpoint: 769,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        speed: 500,
+                    }
+                    }
+                ]   
                 });
             }
         );
@@ -116,6 +134,25 @@
                     <a href="" class="bo">대량주문</a>
                     <a href="" class="bo">주문조회</a>
                 </div>
+            </div>
+        </div>
+        <div class="subMenu2 hide">
+            <div class="in">
+                <ul>
+                    <li><a href="">BRAND</a></li>
+                    <li><a href="">MIND CLEAN<span>BEAUTY</span></a></li>
+                    <li><a href="">핵심원료</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">ODM/OEM</a></li>
+                    <li><a href="">대량주문</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">고객문의</a></li>
+                    <li><a href="">제품리뷰</a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">자주하는질문</a></li>
+                </ul>
             </div>
         </div>
     </header>
