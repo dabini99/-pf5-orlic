@@ -41,11 +41,14 @@
             $("header .subMenu2").wrapAll('<div class="sub2 hide"></div>');
             // 메인메뉴 아래 서브메뉴
             $("header div.flex ul.gnb li a").hover(function(){
-                $("header .sub2").addClass("show");
+                // $("header .sub2").addClass("show");
+                $("header .sub2").slideDown();
             });
             // 마우스떼면 사라지기
             $("header .subMenu2").mouseleave(function(){
-                $("header .sub2").removeClass("show");
+                // $("header .sub2").removeClass("show");
+                // $("header .sub2").addClass("show");
+                $("header .sub2").slideUp();
             });
         });
     </script>
