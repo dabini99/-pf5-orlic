@@ -106,6 +106,34 @@ footer div.wrap p.copy{
   color: #c3c4c4;
   font-size: 14px;
 }
+footer .bubu{  
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+footer .bubu a{  
+  color: white;
+}
+footer .bubu a:nth-child(1){  
+  background-image: url(../img/bagicon.png);
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+}
+footer .bubu a:nth-child(1):hover{
+  background-image: url(../img/bagicon2.png);
+}
+footer .bubu a:nth-child(2){
+  background-image: url(../img/suchicon.png);
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+}
+footer .bubu a:nth-child(2):hover{
+  background-image: url(../img/suchicon2.png);
+}
 footer>a{  
   color: white;
   width: 50px;
