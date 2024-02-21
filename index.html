@@ -49,6 +49,16 @@
                 // $("header .sub2").removeClass("show");
                 $("header .sub2").slideUp();
             });
+            $("footer > a").click(function(){
+                $("html,body").animate({scrollTop:0},1000);
+            });
+            // 탑 애니 스크롤(타이틀에서는 안보이고 창을 내리면 그 때부터 보이게 하기) //수정하기
+            if($(window).scroll()>$("section#brand").height()){
+                $("footer > a").show();
+            }else{
+                $("footer > a").hide();
+            }
+
         });
     </script>
     <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
@@ -303,7 +313,11 @@
             </p>
             <p class="copy">Copyright ©2023 올릭 All Rights Reserved.</p> 
         </div>
-        <!-- <a href="" class="top">TOP</a> -->
+        <div>
+            <a href="">장바구니</a>
+            <a href="">물건 찾기</a>
+        </div>
+        <a href="#" class="top">TOP</a>
     </footer>
     
 
