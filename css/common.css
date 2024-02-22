@@ -149,3 +149,10 @@ main .h2::before{
 .h100{
    height: 100%;
 }
+/* 폰트 */
+.kor{
+   font-family: 'Noto Sans KR', sans-serif;
+}
+.eng{
+   font-family: "Cinzel", serif;
+}

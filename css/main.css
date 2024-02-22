@@ -107,11 +107,11 @@ section#products div.wrap div.product a img {
 section#products div.wrap div.product:nth-of-type(3) a img{
   width: 300px;
 }
-section#products div.wrap div.product a p.name {
-  
+section#products div.wrap div.product a p.name {  
+  font-family: 'Noto Sans KR', sans-serif;
 }
-section#products div.wrap div.product a p.price {
-  
+section#products div.wrap div.product a p.price {  
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .slick-dots{  
   top: -38px;

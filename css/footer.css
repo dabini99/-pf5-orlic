@@ -18,6 +18,7 @@ footer div.wrap div.number{
 }
 footer div.wrap div.number p{
 
+  font-family: 'Noto Sans KR', sans-serif;
 }
 footer div.wrap div.order{
   display: flex;
@@ -32,6 +33,7 @@ footer div.wrap div.order a{
   padding-right: 30px;
   position: relative;
   color: #c3c4c4;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 footer div.wrap div.order a:nth-of-type(2){
   
@@ -81,12 +83,14 @@ footer div.wrap a.menu ul div.list li{
 }
 footer div.wrap a.menu ul div.list p{
   line-height: 1.6;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 footer div.wrap address{
   grid-column: 1 / span 3;
   grid-row: 2;
   color: #c3c4c4;
   font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 footer div.wrap address::before{
   content: "";
@@ -99,37 +103,38 @@ footer div.wrap p.mail{
   grid-row: 3;
   color: #c3c4c4;
   font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 footer div.wrap p.copy{
   grid-column: 1 / span 3;
   grid-row: 4;
   color: #c3c4c4;
   font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 footer .bubu{  
   display: flex;
   flex-direction: column;
   position: fixed;
-  bottom: 30px;
+  bottom: 80px;
   right: 30px;
+  gap: 15px;
 }
 footer .bubu a{  
   color: white;
-}
-footer .bubu a:nth-child(1){  
-  background-image: url(../img/bagicon.png);
   width: 60px;
   height: 60px;
   font-size: 0;
+}
+footer .bubu a:nth-child(1){  
+  background-image: url(../img/bagicon.png);
 }
 footer .bubu a:nth-child(1):hover{
   background-image: url(../img/bagicon2.png);
 }
 footer .bubu a:nth-child(2){
   background-image: url(../img/suchicon.png);
-  width: 60px;
-  height: 60px;
-  font-size: 0;
+
 }
 footer .bubu a:nth-child(2):hover{
   background-image: url(../img/suchicon2.png);
@@ -143,9 +148,20 @@ footer>a{
   position: fixed;
   bottom: 20px;
   right: 20px;
-  text-align: center;
-  line-height: 50px;
   transition: 0.5s;
+  font-size: 0;
+}
+footer > a::before{  
+  content: "";
+  background-image: url(../img/arrow_upward.svg);
+  display: block;
+  width: 24px;
+  height: 24pc;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 25%;
+  left: 25%;
 }
 footer>a:hover{
   background-color: #145240;

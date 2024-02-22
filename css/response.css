@@ -3,11 +3,11 @@
     height: inherit;
   }
   body{    
-  padding: 0 10px;
   }
 /*  header  */
   header div.flex{    
   grid-template-columns: 50% 50%;
+  padding: 0 10px;
   }
   header div.flex h2{   
   width: 77px;
@@ -30,15 +30,56 @@
   width: 35px;
   }
   header div.flex ul.id li:nth-of-type(2) a::after{    
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   bottom: 12px;
   }
   header div.flex ul.id li:nth-of-type(2) a::before{    
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
+  }
+  header .smenu{
+    
+  }
+  header .smenu a.close{
+    
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  }
+  header .smenu .slideMain{
+    
+  width: auto;
+  }
+  header .smenu ul{
+   width: 100%;
+  }
+  header .smenu ul div.side{
+  font-size: 50%;
+  }
+  header .smenu ul div.side li{
+  font-size: 250%;
+  }
+  header .smenu ul div.side p{
+  font-size: 100%;
+  }
+  header .smenu .slideMain .other{ 
+  width: 100%;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  }
+  header .smenu .slideMain .other p.call{
+  font-size: 100%;
+  }
+  header .smenu .slideMain .other p.oo{
+    font-size: 90%;
+  }
+  header .smenu .slideMain .other a.bo{
+    
   }
 /* brand */
   section#brand{
   box-sizing: border-box;
+  min-height: inherit;
+  padding-top: 50px;
   }
   section#brand div.flex{    
   /*! flex-direction: column; */
@@ -49,9 +90,11 @@
   }
   section#brand div.flex div.text{   
   grid-row: 1;
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
+  /*! width: 100%; */
+  /*! height: 100%; */
+  /*! padding: 50px 0; */
+  box-sizing: border-box;
+  padding: 0 10px;
   }
   section#brand div.flex div.text p.title{
     
@@ -64,23 +107,28 @@
   }
   section#brand div.flex div.photo{    
   grid-row: 2;
-  height: 100%;
+  /*! height: 100%; */
   width: 100%;
   }
   section#brand div.flex div.photo::after{    
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100vw;
+  /*! width: 360px; */
+  object-fit: contain;
   }
 /*  products  */
   section#products div.wrap div.product:nth-of-type(3) a img{    
   height: 100%;
-  width: 100%;
+  width: auto;
+  aspect-ratio: auto;
   }
 /*  more  */
   section#more{    
   display: grid;
   grid-template-rows: 225px 225px;
+  min-height: inherit;
   }
   section#more div.process{    
   width: 100%;
@@ -97,9 +145,70 @@
   grid-row: 2;
   height: 100%;
   }
-  section#more div.ing::before{
-    
+  section#more div.ing::before{    
   background-size: cover;
   background-repeat: no-repeat;
+  }
+/*  footer  */
+  footer{  
+  padding: 0 10px;
+  }
+  footer div.wrap{  
+  flex-direction: column;
+  display: flex;
+  max-width: inherit;
+  width: 100%;
+  }
+  footer div.wrap div.number{ 
+  align-self: auto;
+  }
+  footer div.wrap div.number p{  
+  font-size: 100%;
+  line-height: 2;
+  }
+  footer div.wrap div.number p:nth-of-type(2){
+  font-weight: 700;
+  font-size: 150%;
+  }
+  footer div.wrap div.order{
+    
+  }
+  footer div.wrap a.menu{ 
+  display: none;
+  }
+  footer div.wrap address{
+  line-height: 1.4;
+  font-size: 70%;
+  }
+  footer div.wrap address::before{
+  padding-bottom: 15px;
+  }
+  footer div.wrap p.mail{
+  line-height: 1.4;
+  font-size: 70%;
+  color: #9a9d9d;
+  }
+  footer div.wrap p.copy{
+  line-height: 1.4;
+  font-size: 70%;
+  color: #9a9d9d;
+  }
+  footer .bubu{
+    
+  }
+  footer .bubu a{   
+  width: 42px;
+  height: 42px;
+  background-size: cover;
+  }
+  footer > a{ 
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  }
+  footer > a::before{  
+  top: 15%;
+  left: 15%;
   }
 }

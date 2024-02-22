@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <!-- 구글폰트// -->
     <!-- 프리텐다드 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
@@ -42,22 +45,25 @@
             // 메인메뉴 아래 서브메뉴
             $("header div.flex ul.gnb li a").hover(function(){
                 // $("header .sub2").addClass("show");
-                $("header .sub2").slideDown();
+                $("header .sub2").stop().slideDown();
+                $("header").addClass("backgroundC");
             });
             // 마우스떼면 사라지기
             $("header .subMenu2").mouseleave(function(){
                 // $("header .sub2").removeClass("show");
-                $("header .sub2").slideUp();
+                $("header .sub2").stop().slideUp();
+                $("header").removeClass("backgroundC");
             });
             $("footer > a").click(function(){
                 $("html,body").animate({scrollTop:0},1000);
             });
             // 탑 애니 스크롤(타이틀에서는 안보이고 창을 내리면 그 때부터 보이게 하기) //수정하기
-            if($(window).scroll()>$("section#brand").height()){
-                $("footer > a").show();
-            }else{
-                $("footer > a").hide();
-            }
+            //if($(window).scroll()>$("section#brand").height()){
+                //$("footer > a").show();
+            //}else{
+                //$("footer > a").hide();
+            //}
+            //해당페이지에서만 안보이게 하기
 
         });
     </script>
@@ -101,7 +107,7 @@
     <!-- 상단영역 -->
     <header>
         <div class="flex between center wrap">
-            <h2>orlic</h2>
+            <h2 class="eng">orlic</h2>
             <ul class="gnb flex">
                 <li><a href="">BRAND</a></li>
                 <li><a href="">B2B</a></li>
@@ -122,21 +128,21 @@
             <div class="slideMain">
                 <ul>
                     <div class="side">
-                        <li class="h5"><a href="">BRAND</a></li>
+                        <li class="h5 eng"><a href="">BRAND</a></li>
                         <p><a href="">BRAND</a></p>
                         <p><a href="">MIND CLEAN BEAUTY</a></p>
                         <p><a href="">핵심원료</a></p>
                     </div>
                     <div class="side">
-                        <li class="h5"><a href="">B2B</a></li>
+                        <li class="h5 eng"><a href="">B2B</a></li>
                         <p><a href="">ODM/OEM</a></p>
                         <p><a href="">대량주문</a></p>
                     </div>
                     <div class="side">
-                        <li class="h5"><a href="">PRODUCT</a></li>
+                        <li class="h5 eng"><a href="">PRODUCT</a></li>
                     </div>
                     <div class="side">
-                        <li class="h5"><a href="">NOTICE</a></li>
+                        <li class="h5 eng"><a href="">NOTICE</a></li>
                         <p><a href="">고객문의</a></p>
                         <p><a href="">제품리뷰</a></p>
                         <p><a href="">공지사항</a></p>
@@ -147,10 +153,10 @@
                     </div>
                 </ul>
                 <div class="other">
-                    <p class="call h6">고객센터 1599-2275</p>
-                    <p class="oo">평일10:00~18:00(점심12:00~13:00) <span class="oo block">토/일/공휴일 휴무</span> </p>
-                    <a href="" class="bo">대량주문</a>
-                    <a href="" class="bo">주문조회</a>
+                    <p class="call h6 kor">고객센터 1599-2275</p>
+                    <p class="oo kor">평일10:00~18:00(점심12:00~13:00) <span class="oo block kor">토/일/공휴일 휴무</span> </p>
+                    <a href="" class="bo kor">대량주문</a>
+                    <a href="" class="bo kor">주문조회</a>
                 </div>
             </div>
         </div>
@@ -181,12 +187,12 @@
     <!-- 메인영역 -->
     <main>
         <!-- brand -->
-        <section id="brand" class="paddingT50 paddingB50 vh100">
+        <section id="brand" class="vh100">
             <div class="flex">
                 <div class="text">
-                    <p class="title">Brand</p>
-                    <h2 class="h1">Make my self be <span></span> beautiful</h2>
-                    <p class="sub">국내 유기농  화장품 1세대인 ORLIC은 건강한 피부에 대한 진심을 담아 유기농 원료를 기반으로 건강한 유기농 스킨케어 브랜드를 표방합니다.</p>
+                    <p class="title eng">Brand</p>
+                    <h2 class="h1 eng">Make my self be <span></span> beautiful</h2>
+                    <p class="sub kor">국내 유기농  화장품 1세대인 ORLIC은 건강한 피부에 대한 진심을 담아 유기농 원료를 기반으로 건강한 유기농 스킨케어 브랜드를 표방합니다.</p>
                     <a href="">VIEW MORE</a>
                 </div>
                 <div class="photo">
@@ -249,15 +255,15 @@
         <section id="more" class="flex vh100">
             <div class="process">
                 <div class="sub">
-                    <h2 class="h5">PROCESS</h2>
-                    <p class="h6">행복, 평온 , 내적 조화의 순간</p>
+                    <h2 class="h5 eng">PROCESS</h2>
+                    <p class="h6 kor">행복, 평온 , 내적 조화의 순간</p>
                 </div>
                 <a href="">VIEW MORE</a>
             </div>
             <div class="ing">
                 <div class="sub">
-                    <h3 class="h5">INGREDIENT & TECH</h3>
-                    <p class="h6">올릭만의 독자적 성분 조성</p>
+                    <h3 class="h5 eng">INGREDIENT & TECH</h3>
+                    <p class="h6 kor">올릭만의 독자적 성분 조성</p>
                 </div>
                 <a href="">VIEW MORE</a>
             </div>
