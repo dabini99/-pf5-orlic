@@ -68,6 +68,7 @@
   }
   section#brand div.flex div.text p.sub{    
   white-space: pre-wrap;
+  margin-bottom: 0;
   }
   section#brand div.flex div.photo{    
   grid-row: 2;
@@ -98,11 +99,26 @@
   width: 100%;
   grid-row: 1;
   height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
   }
-  section#more div.process::before{
-    
+  section#more div.process::before{ 
   background-size: cover;
   background-repeat: no-repeat;
+  }
+  section#more div.process div.sub{
+    
+  }
+  section#more div.process div.sub h2{
+    
+  }
+  section#more div.process div.sub p{
+    
+  }
+  section#more div.process a.viewmore{
+    
+  position: inherit;
   }
   section#more div.ing{    
   width: 100%;
@@ -113,6 +129,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   }
+
 /*  footer  */
   footer{  
   padding: 0 10px;

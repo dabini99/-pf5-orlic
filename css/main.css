@@ -41,8 +41,38 @@ section#brand div.flex div.text p.sub {
   margin-bottom: 100px;
   font-weight: 600;
 }
-section#brand div.flex div.text a {
-  
+section#brand div.flex div.text a.viewmore { 
+  height: 45px;
+  display: block;
+  line-height: 45px;
+  font-size: 13px;
+  transform: translateX(10px);
+}
+section#brand div.flex div.text a.viewmore span { 
+
+}
+section#brand div.flex div.text a.viewmore span:nth-child(1) { 
+  z-index: 1;
+  position: relative;
+  color: white;
+  /*! padding: 0 10px 0 0; */
+  line-height: 45px;
+}
+section#brand div.flex div.text a.viewmore span:nth-child(1)::before{  
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  /*! top: calc((-45px / 2) / 2); */
+  right: 0;
+}
+section#brand div.flex div.text a.viewmore span:nth-child(2) { 
+  color: green;
+  padding-left: 10px;
 }
 section#brand div.flex div.photo {  
   background-repeat: no-repeat;
@@ -145,11 +175,39 @@ section#more div.process div.sub h2 {
 section#more div.process div.sub p {
   
 }
-section#more div.process a {  
+section#more div.process a.viewmore {  
+  height: 45px;
+  display: block;
+  line-height: 45px;
+  font-size: 13px;
+  z-index: 1;
   position: absolute;
-  bottom: 230px;
-  right: 0;
+  right: 90px;
+  bottom: 90px;
+}
+section#more div.process a.viewmore span{
+
+}
+section#more div.process a.viewmore span:nth-child(1){
+  z-index: 1;
+  position: relative;
+  color: white; 
+}
+section#more div.process a.viewmore span:nth-child(1)::before{
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #145240;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  /*! top: calc((-45px / 2) / 2); */
+  right: 0; 
+}
+section#more div.process a.viewmore span:nth-child(2){
   color: #145240;
+  padding-left: 10px;
 }
 section#more div.ing {  
   width: 50%;
@@ -175,9 +233,37 @@ section#more div.ing div.sub h3 {
 section#more div.ing div.sub p {
   
 }
-section#more div.ing a {  
+section#more div.ing a.viewmore {  
+  height: 45px;
+  display: block;
+  line-height: 45px;
+  font-size: 13px;
   position: absolute;
-  bottom: 0;
+  z-index: 1;
+  right: 90px;
+  bottom: 90px;
+}
+section#more div.ing a.viewmore span {
+
+}
+section#more div.ing a.viewmore span:nth-child(1) {
+  z-index: 1;
+  position: relative;
+  color: white;
+}
+section#more div.ing a.viewmore span:nth-child(1)::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #145240;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  /*! top: calc((-45px / 2) / 2); */
   right: 0;
+}
+section#more div.ing a.viewmore span:nth-child(2) {
   color: #145240;
+  padding-left: 10px;
 }
