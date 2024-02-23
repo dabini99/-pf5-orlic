@@ -36,6 +36,9 @@
   header div.flex ul.id li:nth-of-type(2) a::before{    
   border-bottom: 2px solid white;
   }
+  header .smenu{ 
+  display: none !important;
+  }
 /* brand */
   section#brand{
   box-sizing: border-box;
