@@ -36,45 +36,6 @@
   header div.flex ul.id li:nth-of-type(2) a::before{    
   border-bottom: 2px solid white;
   }
-  header .smenu{
-    
-  }
-  header .smenu a.close{
-    
-  width: 20px;
-  height: 20px;
-  background-size: contain;
-  }
-  header .smenu .slideMain{
-    
-  width: auto;
-  }
-  header .smenu ul{
-   width: 100%;
-  }
-  header .smenu ul div.side{
-  font-size: 50%;
-  }
-  header .smenu ul div.side li{
-  font-size: 250%;
-  }
-  header .smenu ul div.side p{
-  font-size: 100%;
-  }
-  header .smenu .slideMain .other{ 
-  width: 100%;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  }
-  header .smenu .slideMain .other p.call{
-  font-size: 100%;
-  }
-  header .smenu .slideMain .other p.oo{
-    font-size: 90%;
-  }
-  header .smenu .slideMain .other a.bo{
-    
-  }
 /* brand */
   section#brand{
   box-sizing: border-box;
