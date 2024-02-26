@@ -49,7 +49,7 @@
                 $("header").addClass("backgroundC");
             });
             // 마우스떼면 사라지기
-            $("header .subMenu2").mouseleave(function(){
+            $("header div.flex ul.gnb,header .subMenu2").mouseleave(function(){
                 // $("header .sub2").removeClass("show");
                 $("header .sub2").stop().slideUp();
                 $("header").removeClass("backgroundC");
@@ -57,13 +57,20 @@
             $("footer > a").click(function(){
                 $("html,body").animate({scrollTop:0},1000);
             });
+            $("header").hover(function(){
+                $(this).toggleClass("backgroundW");
+            });
             // 탑 애니 스크롤(타이틀에서는 안보이고 창을 내리면 그 때부터 보이게 하기) 
             $(window).scroll(function(){
                 if($(window).scrollTop()>$("#brand").height()){
+                        //상단 헤더 창 내릴 시 올리기
+                        $("header").addClass("slideU");
                         // 탑 애니
                         //탑요소에 클래스를 붙이시오(topFix)
                         $("footer > a").addClass("topFix");
                     }else{ // 위 조건이 안맞으면(그렇치 않으면)
+                        //상단 헤더 창 올리면 원상복귀
+                        $("header").removeClass("slideU");
                         $("footer > a").removeClass("topFix"); // 탑버튼에 클래스를 없애시오
                     }
             });

@@ -5,7 +5,7 @@ header {
   width: 100%;
 }
 header.backgroundC{
-  
+
 }
 header div.flex {  
   height: 90px;
@@ -38,6 +38,9 @@ header div.flex h2 {
 header.backgroundC div.flex h2{
   background-image: url(../img/logo_color.png);
 }
+header.backgroundW div.flex h2{
+  background-image: url(../img/logo_color.png);
+}
 header div.flex ul.gnb {  
   /*! width: calc((100% - 110px) / 2); */
   justify-content: space-evenly;
@@ -54,6 +57,10 @@ header div.flex ul.gnb li a {
   font-weight: 700;
 }
 header.backgroundC div.flex ul.gnb li a{
+  height: 90px;
+  color: #555;
+}
+header.backgroundW div.flex ul.gnb li a{
   height: 90px;
   color: #555;
 }
@@ -75,6 +82,9 @@ header div.flex ul.id li a {
 header.backgroundC div.flex ul.id li a {  
   color: #555;
 }
+header.backgroundW div.flex ul.id li a {  
+  color: #555;
+}
 header div.flex ul.id li:nth-of-type(1) a{  
   display: flex;
   gap: 5px;
@@ -92,6 +102,11 @@ header.backgroundC div.flex ul.id li:nth-of-type(1) a{
   font-weight: 700;
 }
 header.backgroundC div.flex ul.id li:nth-of-type(1) a::before{
+  content: "";
+  background-image: url(../img/language_black.svg);
+  display: block;
+}
+header.backgroundW div.flex ul.id li:nth-of-type(1) a::before{
   content: "";
   background-image: url(../img/language_black.svg);
   display: block;
@@ -129,6 +144,12 @@ header.backgroundC div.flex ul.id li:nth-of-type(2) a::before{
 header.backgroundC div.flex ul.id li:nth-of-type(2) a::after{
   border-bottom: 3px solid #555;
 }
+header.backgroundW div.flex ul.id li:nth-of-type(2) a::before{
+  border-bottom: 3px solid #555;
+}
+header.backgroundW div.flex ul.id li:nth-of-type(2) a::after{
+  border-bottom: 3px solid #555;
+}
 header div.flex ul.id div.join{
 
 }
@@ -137,6 +158,9 @@ header div.flex ul.id div.join a{
   font-family: 'Noto Sans KR', sans-serif;
 }
 header.backgroundC div.flex ul.id div.join a{
+  color: #555;
+}
+header.backgroundW div.flex ul.id div.join a{
   color: #555;
 }
 header div.flex ul.id div.join a:not(:last-child){
@@ -299,5 +323,11 @@ header .subMenu2 .in ul li a{
   display: block;
 }
 .backgroundC{
+  
+}
+.backgroundW{
   background-color: white;
+}
+.slideU{
+  top: -90px;
 }
