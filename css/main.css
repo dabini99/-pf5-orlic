@@ -63,7 +63,7 @@ section#brand div.flex div.text a.viewmore span:nth-child(1)::before{
   display: block;
   width: 45px;
   height: 45px;
-  background-color: green;
+  background-color: #145240;
   border-radius: 50%;
   position: absolute;
   z-index: -1;
@@ -71,7 +71,7 @@ section#brand div.flex div.text a.viewmore span:nth-child(1)::before{
   right: 0;
 }
 section#brand div.flex div.text a.viewmore span:nth-child(2) { 
-  color: green;
+  color: #145240;
   padding-left: 10px;
 }
 section#brand div.flex div.photo {  
@@ -162,12 +162,14 @@ section#more div.process:before{
   height: 100%;
   display: block;
   position: absolute;
+  left: 0;
 }
 section#more div.process div.sub {  
   position: absolute;
   bottom: 110px;
   color: white;
   left: 100px;
+  z-index: 1;
 }
 section#more div.process div.sub h2 {  
   line-height: 2;
@@ -202,7 +204,7 @@ section#more div.process a.viewmore span:nth-child(1)::before{
   border-radius: 50%;
   position: absolute;
   z-index: -1;
-  /*! top: calc((-45px / 2) / 2); */
+  top: calc((-45px / 2) / 2);
   right: 0; 
 }
 section#more div.process a.viewmore span:nth-child(2){
@@ -220,12 +222,14 @@ section#more div.ing:before{
   height: 100%;
   display: block;
   position: absolute;
+  left: 0;
 }
 section#more div.ing div.sub {  
   position: absolute;
   bottom: 110px;
   color: white;
   left: 100px;
+  z-index: 1;
 }
 section#more div.ing div.sub h3 {  
   line-height: 2;
@@ -238,8 +242,8 @@ section#more div.ing a.viewmore {
   display: block;
   line-height: 45px;
   font-size: 13px;
-  position: absolute;
   z-index: 1;
+  position: absolute;
   right: 90px;
   bottom: 90px;
 }
@@ -260,7 +264,7 @@ section#more div.ing a.viewmore span:nth-child(1)::before {
   border-radius: 50%;
   position: absolute;
   z-index: -1;
-  /*! top: calc((-45px / 2) / 2); */
+  top: calc((-45px / 2) / 2);
   right: 0;
 }
 section#more div.ing a.viewmore span:nth-child(2) {

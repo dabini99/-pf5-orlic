@@ -69,11 +69,13 @@
   section#brand div.flex div.text p.sub{    
   white-space: pre-wrap;
   margin-bottom: 0;
+  padding-bottom: 30px;
   }
   section#brand div.flex div.photo{    
   grid-row: 2;
   /*! height: 100%; */
   width: 100%;
+  padding-top: 30px;
   }
   section#brand div.flex div.photo::after{    
   width: 100%;
@@ -97,37 +99,59 @@
   }
   section#more div.process{    
   width: 100%;
-  grid-row: 1;
-  height: 100%;
+  height: auto;
   display: flex;
-  justify-content: space-around;
-  align-items: end;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 20px;
+  box-sizing: border-box;
+  gap: 13px;
   }
   section#more div.process::before{ 
   background-size: cover;
   background-repeat: no-repeat;
   }
-  section#more div.process div.sub{
-    
+  section#more div.process div.sub{  
+  position: initial;
   }
-  section#more div.process div.sub h2{
-    
+  section#more div.process div.sub h2{   
+  font-size: 20px;
   }
   section#more div.process div.sub p{
-    
+  font-size: 15px;
   }
   section#more div.process a.viewmore{
-    
-  position: inherit;
+  position: initial;
   }
   section#more div.ing{    
   width: 100%;
-  grid-row: 2;
-  height: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 20px;
+  box-sizing: border-box;
+  gap: 13px;
   }
   section#more div.ing::before{    
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
+  }
+  section#more div.ing div.sub{
+  position: initial;
+  left: 0;
+  }
+  section#more div.ing div.sub h3{ 
+  font-size: 20px;
+  }
+  section#more div.ing div.sub p{
+  font-size: 15px;
+  }
+  section#more div.ing a.viewmore{
+  position: initial;
   }
 
 /*  footer  */
