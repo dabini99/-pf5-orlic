@@ -16,9 +16,22 @@
     <!-- 구글폰트// -->
     <!-- 프리텐다드 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <!--  -->
     <!-- https://ionic.io/ionicons/v1 -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <!-- youtube영상 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
+    <style>
+        #background{
+            z-index: -1;
+        }
+        </style>
+        <script>
+            jQuery( function() {  //$는 jQuery 단축표기, $(document).ready(function(){})
+                jQuery( '#background' ).YTPlayer();
+            });
+        </script>
     <!--  -->
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/header.css">
@@ -190,8 +203,22 @@
         </div>
     </header>
     <!-- 타이틀영역 -->
-    <div id="title">
+    <div class="title1">
         <video autoplay muted loop src="./img/mainVideo.mp4"></video>
+        <!-- <div id="background" class="player" data-property="{
+            videoURL: 'https://youtu.be/mQmbO_wPzY8',
+            mute: true,
+            showControls: false,
+            useOnMobile: true,
+            quality: 'highres',
+            containment: 'body',
+            loop: true,
+            autoPlay: true,
+            stopMovieOnBlur: false,
+            startAt: 0,
+            opacity: 1
+            }">
+        </div> -->
     </div>
     <!-- 메인영역 -->
     <main>

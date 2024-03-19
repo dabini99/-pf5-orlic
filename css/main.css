@@ -91,6 +91,7 @@ section#brand div.flex div.photo p {
 }
 section#products {  
   min-height: 900px;
+  background-color: white;
 }
 section#products div.wrap {  
   gap: 30px;

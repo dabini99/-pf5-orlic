@@ -3,6 +3,7 @@
     height: inherit;
   }
   body{    
+  overflow-x: hidden;
   }
 /*  header  */
   header div.flex{    
